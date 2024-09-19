@@ -1,0 +1,108 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Barra de navegación lateral */
+.sidebar {
+    height: 100vh;
+    width: 80px;
+    background-color: #023e8a;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.2s ease;
+    overflow: hidden;
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #00b4d8;
+}
+
+.sidebar i {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.sidebar span {
+    display: none;
+    font-size: 1.2em;
+}
+
+.sidebar:hover span {
+    display: inline;
+}
+
+/* Contenedor principal del contenido */
+.main-content {
+    margin-left: 80px;
+    padding: 20px;
+    transition: margin-left 0.2s ease;
+}
+
+.sidebar:hover + .main-content {
+    margin-left: 200px;
+}
+
+/* Encabezado */
+header {
+    background-color: #0077b6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Secciones de contenido */
+section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #0077b6;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Pie de página */
+footer {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
