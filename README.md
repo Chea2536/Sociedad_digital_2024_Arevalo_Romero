@@ -1,1 +1,0 @@
-# Sociedad_digital_2024_Arevalo_Romero
